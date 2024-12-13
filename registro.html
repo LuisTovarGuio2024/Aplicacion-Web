@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Clientes</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body class="contenedor-centro">
+    <h1 class="titulo">TecniServicios Col</h1>
+    <section class="secciones" id="registro">
+        <h2 class="titulo_secciones">Registro de Clientes</h2>
+        <form id="registroForm" class="formulario-contacto" action="Php/registro.php" method="POST">
+            <div class="form-group">
+                <label for="nombreRegistro">Nombre:</label>
+                <input type="text" id="nombreRegistro" name="nombreRegistro" required>
+            </div>
+            <div class="form-group">
+                <label for="correoRegistro">Correo Electrónico:</label>
+                <input type="email" id="correoRegistro" name="correoRegistro" required>
+            </div>
+            <div class="form-group">
+                <label for="passwordRegistro">Contraseña:</label>
+                <input type="password" id="passwordRegistro" name="passwordRegistro" required>
+            </div>
+            <div class="form-group">
+                <label for="direccionRegistro">Dirección:</label>
+                <input type="text" id="direccionRegistro" name="direccionRegistro" required>
+            </div>
+            <div class="form-group">
+                <label for="ciudadRegistro">Ciudad:</label>
+                <input type="text" id="ciudadRegistro" name="ciudadRegistro" required>
+            </div>
+            <div class="form-group">
+                <label for="telefonoRegistro">Teléfono:</label>
+                <input type="tel" id="telefonoRegistro" name="telefonoRegistro" required>
+            </div>
+            <button type="submit" class="boton-enviar">Registrar</button>
+        </form>
+        
+    </section>
+    
+    <script src="Php/registro.js"></script> <!-- Si tienes un archivo de JS separado -->
+</body>
+</html>

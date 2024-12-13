@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <title>Facturación</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body class="contenedor-centro">
+    <h1 class="titulo">Facturación y Liquidación</h1>
+    <section class="secciones" id="facturacion">
+        <h2 class="titulo_secciones">Generar Factura</h2>
+        <form id="facturaForm" class="formulario-contacto">
+            <div class="form-group">
+                <label for="nombreCliente">Nombre del Cliente:</label>
+                <input type="text" id="nombreCliente" required>
+            </div>
+            <div class="form-group">
+                <label for="montoRepuestos">Monto de Repuestos:</label>
+                <input type="number" id="montoRepuestos" required>
+            </div>
+            <div class="form-group">
+                <label for="montoManoObra">Monto de Mano de Obra:</label>
+                <input type="number" id="montoManoObra" required>
+            </div>
+            <button type="submit" class="boton-enviar">Generar Factura</button>
+        </form>
+        <div id="resultadoFactura" class="textos"></div>
+    </section>
+    <script src="Php/factura.js"></script>
+</body>
+</html>
